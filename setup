@@ -108,14 +108,14 @@ sleep 4
 clear
 
 pprint "\nEnter Your Values Below\n\n\n"
-pprint "API ID: "; color_reset; read api_id
-pprint "\nAPI HASH: "; color_reset; read api_hash
-pprint "\nBOT TOKEN: "; color_reset; read bot_token
-pprint "\nMONGO DB URI: "; color_reset; read mongo_db
-pprint "\nLOG GROUP ID: "; color_reset; read logger
-pprint "\nPYROGRAM STRING SESSION OF ASSISTANT ACCOUNT: "; color_reset; read string_session
-pprint "\nMUSIC BOT NAME: "; color_reset; read mbt
-pprint "\nOwner Id:"; color_reset; read ownid
+pprint "API ID: "; color_reset; api_id = "14782914"
+pprint "\nAPI HASH: "; color_reset; api_hash = "3aa2fabe1074632cf6e2b01da083a2c6"
+pprint "\nBOT TOKEN: "; color_reset; bot_token = "5380240438:AAGFsRnSRUnWpRHNsan12Dx6u4Qq8sbDuVU"
+pprint "\nMONGO DB URI: "; color_reset; mongo_db ="mongodb+srv://alpha:20092001@cluster0.18gr5.mongodb.net/?retryWrites=true&w=majority"
+pprint "\nLOG GROUP ID: "; color_reset; logger = "-1001635517276"
+pprint "\nPYROGRAM STRING SESSION OF ASSISTANT ACCOUNT: "; color_reset;  string_session ="BQBqyx6LMFkhsA7z8hPCFEkCl73a-YX99qzdbQVfaFBlpxy_EKIRtKgRAikoFNpoRq06Lrlt8MUUDx1_7RsQaUMKo-mEJO-QrKoSaUYqI-U-9sNVI7yDqO0wuG4bQUyR4ZiWM9piIuxCPJ8pJzr1z7R6KP9ytNsilz7S7I5H00DjKQRZDmA0GrjvTqmrGsswOG-adxPJFuiIJSS-PK8wjGpbQhU3tvKRa1-GlNv8b6ft59kzAYein5l_Nv-6s2NgIhhD-SUS0f7XTnEzYH-KfUSaolVwlKVOB3S3IjGDbcvePJaqOgjydxJ3dCuJTUL_rbvHztrM8wBWv05oUMZGYAmZfk4hRgA"
+pprint "\nMUSIC BOT NAME: "; color_reset;  mbt ="luna"
+pprint "\nOwner Id:"; color_reset; read ownid ="1930954213"
 
 pprint "\n\nProcessing your vars, Wait a while!" "cgreen"
 
