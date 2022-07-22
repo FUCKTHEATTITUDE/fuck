@@ -52,14 +52,12 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="Add Me To Your Group 🎉",
-                url=f"http://t.me/{BOT_USERNAME}?startgroup=new",
-            )
-        ],
-        [
-            InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
-            )
+            ),
+            InlineKeyboardButton(
+                text="Add Me To Your Group 🎉",
+                url=f"https://t.me/LUNAXMUSICBOT?startgroup=new",
+            ),
         ],
     ]
     return buttons
