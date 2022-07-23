@@ -56,7 +56,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             ),
             InlineKeyboardButton(
                 text="ɢᴀᴍᴇ",
-                url=f"https://t.me/LUNAXMUSICBOT?start=start",
+                url=f"https://t.me/LUNAXMUSICBOT?start=info",
             ),
         ],
     ]
