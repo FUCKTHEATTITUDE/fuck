@@ -44,6 +44,9 @@ def time_to_sec(time: str):
 
     return total_sec
 
+## After Edits with Timer Bar
+
+
 def stream_markup_timer(_, videoid, chat_id, played, dur):
     played_sec = time_to_sec(played)
     total_sec = time_to_sec(dur)
@@ -57,12 +60,6 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     bar = line*(pos-1)
     bar += circle
     bar += line*(10-len(bar))
-
-## After Edits with Timer Bar
-
-
-def stream_markup_timer(_, videoid, chat_id, played, dur):
-    bar = random.choice(selections)
     buttons = [
         [
             InlineKeyboardButton(
@@ -94,7 +91,18 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
 
 
 def telegram_markup_timer(_, chat_id, played, dur):
-    bar = random.choice(selections)
+    played_sec = time_to_sec(played)
+    total_sec = time_to_sec(dur)
+
+    x, y = str(round(played_sec/total_sec,1)).split(".")
+    pos = int(y)
+
+    line = "—"
+    circle = "◉"
+
+    bar = line*(pos-1)
+    bar += circle
+    bar += line*(10-len(bar))
     buttons = [
         [
             InlineKeyboardButton(
