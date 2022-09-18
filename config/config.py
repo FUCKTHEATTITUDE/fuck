@@ -76,7 +76,7 @@ AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
 
 # Time after which you're assistant account will leave chats automatically.
 AUTO_LEAVE_ASSISTANT_TIME = int(
-    getenv("ASSISTANT_LEAVE_TIME", "5400")
+    getenv("ASSISTANT_LEAVE_TIME", "60")
 )  # Remember to give value in Seconds
 
 # Time after which bot will suggest random chats about bot commands.
@@ -135,12 +135,11 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
-STRING1 = getenv("STRING_SESSION", "BQBqyx6LMFkhsA7z8hPCFEkCl73a-YX99qzdbQVfaFBlpxy_EKIRtKgRAikoFNpoRq06Lrlt8MUUDx1_7RsQaUMKo-mEJO-QrKoSaUYqI-U-9sNVI7yDqO0wuG4bQUyR4ZiWM9piIuxCPJ8pJzr1z7R6KP9ytNsilz7S7I5H00DjKQRZDmA0GrjvTqmrGsswOG-adxPJFuiIJSS-PK8wjGpbQhU3tvKRa1-GlNv8b6ft59kzAYein5l_Nv-6s2NgIhhD-SUS0f7XTnEzYH-KfUSaolVwlKVOB3S3IjGDbcvePJaqOgjydxJ3dCuJTUL_rbvHztrM8wBWv05oUMZGYAmZfk4hRgA")
-STRING2 = getenv("STRING_SESSION2", "BQBVVhljK2m-hu2qXg0hmC8pwVuLMpmqXdSWOvOji832qFs_vTH27F3QuB1gYUHxfUWK7pHV8rF2KIG109-rtCY3SipPGzr2zUKMbjn2NIz3MWDSBCQiuTj5j_LipEKWyYbPEFmimb7kgUJPkP9Z7c9sf9Tr1vMGhm9VKtB_3DU_7xODExOmCFeVXLQkj9mk8fKNFaV5oJi7ILHcALFK-LlW0UM8vEHJXmqFnW8XRtISoUcYNHPZ2vQBtt0_Wvusyzwdu36Ine4jBzNf9ddYq8JbsXoCEWEcGZ5K4boSd0qel7EDmPSnB9vWIC5VUUEXectwJHlobiMrmBRaB80W3w8gVg81cQA")
-STRING3 = getenv("STRING_SESSION3", "BQAxM8Uhf7OgCr4rM6DnMXqfORV5UVaZSiXSbD7yReIpCyo8s-X2KAvDsnMzR0tUQ6USKHdhuQbe1hXZT_mL0jy-z21ucBnALFTW2igSkbDmXUBCYzUudr5XH-TpQ-jW-J9EqqnbchowAk4uSFpr4bV52fCcBJQKBDwDvdnEin_hqrG1CL9PhLTOSN8GZdINCWDw6iCsMIfa7DowgrZyfxmx9qNoYhnreeR5YrKlAF1_6eNV_bwPWN94VBlMWyY7kRg0Ey861m4FHBBePXugFZliRlRhTRH7XySrEgaEtB7LGJhJkoJp8Dymud7IAI6IfSqjzs7obcmOizcEFr0nGy0NAAAAATTcKaoA")
-STRING4 = getenv("STRING_SESSION4", "BQC98gasJOWI-S_pLOg_YhTQ_mq_t2bf8zIHqQ1gMPV1L8-LOL68hRj0po91wdmHZC16I09aJmFxiwnf41Bj5YoyTq7WjVUkR2botMS4e2IMIIW1Becis8jKNxPvZwBXL7pIWWvv2U1FEe2UID8iYgAGUvB-LZloMr17e88HTesayHBLJLiPR6wV3luV0WO70rAMviLRI7vsyW2wbqhWvoZEoA2o1lXAYKspOr62vmDPflhzRD-PhHIvYzBWJnUm-bJuEOxHcePbD8_qlXWF6_lksSB95EumX17f8j1KPfodWayLNNd6fUBST1VgoIt-Tf0GXoR2JgDAgh5HtSnNmIE7AAAAATL5cKkA")
-STRING5 = getenv("STRING_SESSION5", "BQBJmHaqxgccyN1VC37ITcvyivZkYIbaMwJ1RWEUxMhV23onKb7hdnYTsS5KQxcx4hqVKYXZ6yNXU2v8-ILym3JxX4xw_vQxiFBzZqpVbbuFoAhLYsCh8MWbxrkZRpo45ogZUFznBBakJmc7MYbAJLDl1mpPa5aJwO1y7r6v2VJQx-BOxpJVpALciPCrDFoMFW8X6owkwaeMmNFeYfboVztnoPSrIvdOhk7V2w1pFWbHZRRkYS33Thv9gm6s5Pr1yEpnPw6z9EXdySnYCxsPNCuacjqbJPvzYb-M2RGsken1LHw6mVt9hXyaufIGF40JXzoW30xYyu-twLKitMLMn0u1AAAAATb2ufIA")
-
+STRING1 = getenv("STRING_SESSION", "BQBJmHaqxgccyN1VC37ITcvyivZkYIbaMwJ1RWEUxMhV23onKb7hdnYTsS5KQxcx4hqVKYXZ6yNXU2v8-ILym3JxX4xw_vQxiFBzZqpVbbuFoAhLYsCh8MWbxrkZRpo45ogZUFznBBakJmc7MYbAJLDl1mpPa5aJwO1y7r6v2VJQx-BOxpJVpALciPCrDFoMFW8X6owkwaeMmNFeYfboVztnoPSrIvdOhk7V2w1pFWbHZRRkYS33Thv9gm6s5Pr1yEpnPw6z9EXdySnYCxsPNCuacjqbJPvzYb-M2RGsken1LHw6mVt9hXyaufIGF40JXzoW30xYyu-twLKitMLMn0u1AAAAATb2ufIA")
+STRING2 = getenv("STRING_SESSION2", None)
+STRING3 = getenv("STRING_SESSION3", None)
+STRING4 = getenv("STRING_SESSION4", None)
+STRING5 = getenv("STRING_SESSION5", None)
 
 #  __     ___    _ _  ___  _______   __  __ _    _  _____ _____ _____   ____   ____ _______
 #  \ \   / / |  | | |/ / |/ /_   _| |  \/  | |  | |/ ____|_   _/ ____| |  _ \ / __ \__   __|
